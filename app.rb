@@ -27,7 +27,7 @@ get("/") do
       play = options.sample
       
       # Add the play to the @rolls array
-      
+      @rolls.push(play)
     end
     
     erb(:paper)
@@ -43,7 +43,7 @@ get("/") do
       play = options.sample
       
       # Add the play to the @rolls array
-      
+      @rolls.push(play)
     end
    
     erb(:scissors)

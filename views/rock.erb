@@ -17,17 +17,28 @@
   </a>
 </div>
 
+<% they_played = @rolls[0] %>
 
-  <% @rolls.each do |a_roll| %>
-    <h2>
-      We played <%= a_roll %>!
-      
-    <br>
-    <br>
-      They played <%= @rolls.sample %>!
-   <% end %>
-  
-    </h2>
+<h2>
+  We played Rock!
+  <br>
+  <br>
+  They played <%= they_played %>!
+</h2>
+
+<%= if they_played == "Scissors"
+
+outcome = "We won!"
+
+elsif they_played == "Rock"
+
+outcome = "We tied!"
+
+elsif they_played == "Paper"
+
+outcome = "We lost!"
+
+end%>
 
 <div>
   <a href="/">
