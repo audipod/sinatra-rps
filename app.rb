@@ -10,16 +10,12 @@ get("/") do
   
     2.times do
       options = ["Rock", "Paper", "Scissors"]
-
-      # Choose a random play from the options
       play = options.sample
-      
-      # Add the play to the @rolls array
-      
+      @rolls.push(play)
     end
-    
     erb(:rock)
   end
+  
 
   get("/paper") do
     @rolls = []

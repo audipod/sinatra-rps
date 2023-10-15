@@ -21,11 +21,12 @@
   <% @rolls.each do |a_roll| %>
     <h2>
       We played <%= a_roll %>!
+      
     <br>
     <br>
-      They played <%= a_roll %>!
-   
-  <% end %>
+      They played <%= @rolls.sample %>!
+   <% end %>
+  
     </h2>
 
 <div>
