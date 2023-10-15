@@ -1,0 +1,35 @@
+<body>
+    <div>
+  <a href="/rock">
+    Play Rock
+  </a>
+</div>
+
+<div>
+  <a href="/paper">
+    Play Paper
+  </a>
+</div>
+
+<div>
+  <a href="/scissors">
+    Play Scissors
+  </a>
+</div>
+
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      We played <%= a_roll %>!
+    </li>
+    <li>
+      They played <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
+
+<div>
+  <a href="/">
+    Rules
+  </a>
+  </div>
